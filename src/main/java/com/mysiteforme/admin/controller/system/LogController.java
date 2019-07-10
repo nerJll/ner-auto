@@ -58,6 +58,7 @@ public class LogController extends BaseController{
                 wrapper.eq("http_method",httpMethod);
             }
         }
+        wrapper.orderBy("create_date",false);
         Page<Log> logPage = logService.selectPage(new Page<>(page,limit),wrapper);
         layerData.setCount(logPage.getTotal());
         layerData.setData(logPage.getRecords());

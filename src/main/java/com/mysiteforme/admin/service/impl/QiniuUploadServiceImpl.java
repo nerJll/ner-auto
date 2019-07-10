@@ -44,7 +44,7 @@ public class QiniuUploadServiceImpl implements UploadService {
     }
 
     private UploadManager getUploadManager(){
-        Zone z = Zone.zone0();
+        Zone z = Zone.zone2();
         Configuration config = new Configuration(z);
         return new UploadManager(config);
     }
