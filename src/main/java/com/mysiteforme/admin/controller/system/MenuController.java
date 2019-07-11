@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wangl on 2017/12/3.
+ * Created by jll on 2017/12/3.
  * todo:
  */
 @Controller
@@ -29,7 +29,6 @@ public class MenuController extends BaseController{
     private static final Logger LOGGER = LoggerFactory.getLogger(MenuController.class);
 
     @GetMapping ("list")
-    @SysLog("跳转菜单列表")
     public String list(Model model){
         return "admin/system/menu/test";
     }
@@ -65,7 +64,7 @@ public class MenuController extends BaseController{
     @RequiresPermissions("sys:menu:add")
     @PostMapping("add")
     @ResponseBody
-    @SysLog("保存新增菜单数据")
+    @SysLog("新增菜单数据")
     public RestResponse add(Menu menu){
         if(StringUtils.isBlank(menu.getName())){
             return RestResponse.failure("菜单名称不能为空");
@@ -118,7 +117,7 @@ public class MenuController extends BaseController{
     @RequiresPermissions("sys:menu:edit")
     @PostMapping("edit")
     @ResponseBody
-    @SysLog("保存编辑菜单数据")
+    @SysLog("编辑菜单数据")
     public RestResponse edit(Menu menu){
         if(menu.getId() == null){
             return RestResponse.failure("菜单ID不能为空");

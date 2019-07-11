@@ -12,7 +12,7 @@ import java.util.Properties;
 
 
 /**
- * Created by wangl on 2018/1/25.
+ * Created by jll on 2018/1/25.
  * todo:定时任务配置类
  */
 @Configuration

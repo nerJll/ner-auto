@@ -10,7 +10,7 @@ import com.mysiteforme.admin.base.DataEntity;
  * 博客标签
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-17
  */
 @TableName("blog_tags")

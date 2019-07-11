@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  *  服务类
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2017-12-30
  */
 public interface SiteService extends IService<Site> {

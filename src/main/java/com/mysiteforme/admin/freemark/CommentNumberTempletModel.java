@@ -1,6 +1,6 @@
 package com.mysiteforme.admin.freemark;
 
-import com.mysiteforme.admin.exception.MyException;
+import com.mysiteforme.admin.exception.BizException;
 import com.mysiteforme.admin.service.BlogCommentService;
 import freemarker.template.SimpleNumber;
 import freemarker.template.TemplateMethodModelEx;
@@ -18,7 +18,7 @@ public class CommentNumberTempletModel implements TemplateMethodModelEx {
     @Override
     public Object exec(List list) throws TemplateModelException {
         if(list == null || list.size() == 0){
-            throw new MyException("参数为空");
+            throw new BizException("参数为空");
         }
         SimpleNumber simpleNumber = (SimpleNumber) list.get(0);
         Long articleId = simpleNumber.getAsNumber().longValue();

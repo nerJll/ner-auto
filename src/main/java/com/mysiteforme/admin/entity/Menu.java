@@ -11,7 +11,7 @@ import org.hibernate.validator.constraints.Length;
  * 
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2017-10-31
  */
 @TableName("sys_menu")

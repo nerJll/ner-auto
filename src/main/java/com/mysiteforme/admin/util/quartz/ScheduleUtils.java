@@ -1,7 +1,7 @@
 package com.mysiteforme.admin.util.quartz;
 
 import com.mysiteforme.admin.entity.QuartzTask;
-import com.mysiteforme.admin.exception.MyException;
+import com.mysiteforme.admin.exception.BizException;
 import com.mysiteforme.admin.util.Constants;
 import org.quartz.*;
 
@@ -36,7 +36,7 @@ public class ScheduleUtils {
         try {
             return (CronTrigger) scheduler.getTrigger(getTriggerKey(jobId));
         } catch (SchedulerException e) {
-            throw new MyException("获取定时任务CronTrigger出现异常", e);
+            throw new BizException("获取定时任务CronTrigger出现异常", e);
         }
     }
 
@@ -65,7 +65,7 @@ public class ScheduleUtils {
             	pauseJob(scheduler, scheduleJob.getId());
             }
         } catch (SchedulerException e) {
-            throw new MyException("创建定时任务失败", e);
+            throw new BizException("创建定时任务失败", e);
         }
     }
     
@@ -96,7 +96,7 @@ public class ScheduleUtils {
             }
             
         } catch (SchedulerException e) {
-            throw new MyException("更新定时任务失败", e);
+            throw new BizException("更新定时任务失败", e);
         }
     }
 
@@ -111,7 +111,7 @@ public class ScheduleUtils {
         	
             scheduler.triggerJob(getJobKey(scheduleJob.getId()), dataMap);
         } catch (SchedulerException e) {
-            throw new MyException("立即执行定时任务失败", e);
+            throw new BizException("立即执行定时任务失败", e);
         }
     }
 
@@ -122,7 +122,7 @@ public class ScheduleUtils {
         try {
             scheduler.pauseJob(getJobKey(jobId));
         } catch (SchedulerException e) {
-            throw new MyException("暂停定时任务失败", e);
+            throw new BizException("暂停定时任务失败", e);
         }
     }
 
@@ -133,7 +133,7 @@ public class ScheduleUtils {
         try {
             scheduler.resumeJob(getJobKey(jobId));
         } catch (SchedulerException e) {
-            throw new MyException("暂停定时任务失败", e);
+            throw new BizException("暂停定时任务失败", e);
         }
     }
 
@@ -144,7 +144,7 @@ public class ScheduleUtils {
         try {
             scheduler.deleteJob(getJobKey(jobId));
         } catch (SchedulerException e) {
-            throw new MyException("删除定时任务失败", e);
+            throw new BizException("删除定时任务失败", e);
         }
     }
 }

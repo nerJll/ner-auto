@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2017-12-30
  */
 @TableName("sys_site")

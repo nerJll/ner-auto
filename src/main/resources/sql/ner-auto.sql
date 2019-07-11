@@ -1133,7 +1133,7 @@ CREATE TABLE `sys_site` (
 -- ----------------------------
 -- Records of sys_site
 -- ----------------------------
-INSERT INTO `sys_site` VALUES ('1', '孤独的旅行家', 'https://mysiteforme.com/', '', '\0', '1.0', 'wangl', 'https://static.mysiteforme.com/3c5b69f4-2e39-4f88-b302-a6eb48e4c43a.jpg', 'local', 'https://weibo.com/u/2173866382', '1115784675', 'https://gitee.com/wanglingxiao/', 'https://github.com/wangl1989', '13776055179', '1115784675@qq.com', '江苏-苏州', 'http://ow9lg82yy.bkt.clouddn.com/24f5c360-485d-4a6d-9468-2a61c353cf37.ico', 'windows', 'mysql', '2', null, '网站描述', null, '苏ICP备17063650号', '1', '2017-12-30 22:46:15', '1', '2018-07-12 18:49:01', '<p>89年小码农一只,从事java后台开发</p><p><br></p>', '\0');
+INSERT INTO `sys_site` VALUES ('1', '孤独的旅行家', 'https://mysiteforme.com/', '', '\0', '1.0', 'jll', 'https://static.mysiteforme.com/3c5b69f4-2e39-4f88-b302-a6eb48e4c43a.jpg', 'local', 'https://weibo.com/u/2173866382', '1115784675', 'https://gitee.com/jllingxiao/', 'https://github.com/jll1989', '13776055179', '1115784675@qq.com', '江苏-苏州', 'http://ow9lg82yy.bkt.clouddn.com/24f5c360-485d-4a6d-9468-2a61c353cf37.ico', 'windows', 'mysql', '2', null, '网站描述', null, '苏ICP备17063650号', '1', '2017-12-30 22:46:15', '1', '2018-07-12 18:49:01', '<p>89年小码农一只,从事java后台开发</p><p><br></p>', '\0');
 
 -- ----------------------------
 -- Table structure for sys_user

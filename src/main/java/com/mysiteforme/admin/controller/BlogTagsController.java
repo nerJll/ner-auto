@@ -36,7 +36,7 @@ import java.util.Map;
  * 博客标签  前端控制器
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-17
  */
 @Controller
@@ -45,7 +45,6 @@ public class BlogTagsController extends BaseController{
     private static final Logger LOGGER = LoggerFactory.getLogger(BlogTagsController.class);
 
     @GetMapping("list")
-    @SysLog("跳转博客标签列表")
     public String list(){
         return "/admin/blogTags/list";
     }
@@ -77,7 +76,7 @@ public class BlogTagsController extends BaseController{
 
     @RequiresPermissions("blog:tags:add")
     @PostMapping("add")
-    @SysLog("保存新增博客标签数据")
+    @SysLog("新增博客标签数据")
     @ResponseBody
     public RestResponse add(BlogTags blogTags){
         blogTagsService.insert(blogTags);
@@ -94,7 +93,7 @@ public class BlogTagsController extends BaseController{
     @RequiresPermissions("blog:tags:edit")
     @PostMapping("edit")
     @ResponseBody
-    @SysLog("保存编辑博客标签数据")
+    @SysLog("编辑博客标签数据")
     public RestResponse edit(BlogTags blogTags){
         if(null == blogTags.getId() || 0 == blogTags.getId()){
             return RestResponse.failure("ID不能为空");

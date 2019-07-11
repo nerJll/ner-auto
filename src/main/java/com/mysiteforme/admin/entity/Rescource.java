@@ -9,7 +9,7 @@ import com.mysiteforme.admin.base.DataEntity;
  * 系统资源
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-14
  */
 @TableName("sys_rescource")

@@ -2,7 +2,7 @@ package com.mysiteforme.admin.util;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.mysiteforme.admin.entity.Rescource;
-import com.mysiteforme.admin.exception.MyException;
+import com.mysiteforme.admin.exception.BizException;
 import com.qiniu.common.QiniuException;
 import com.qiniu.common.Zone;
 import com.qiniu.http.Response;
@@ -134,7 +134,7 @@ public class QiniuFileUtil {
 		String token = auth.uploadToken(bucketName);
 		File file = new File(src);
 		if(!file.exists()){
-			throw new MyException("本地文件不存在");
+			throw new BizException("本地文件不存在");
 		}
 		QETag tag = new QETag();
 		String hash = tag.calcETag(file);

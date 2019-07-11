@@ -3,7 +3,7 @@ package com.mysiteforme.admin.service.impl;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.mysiteforme.admin.entity.Rescource;
 import com.mysiteforme.admin.entity.UploadInfo;
-import com.mysiteforme.admin.exception.MyException;
+import com.mysiteforme.admin.exception.BizException;
 import com.mysiteforme.admin.service.UploadService;
 import com.mysiteforme.admin.util.QETag;
 import com.mysiteforme.admin.util.RestResponse;
@@ -125,7 +125,7 @@ public class LocalUploadServiceImpl implements UploadService {
     public String uploadLocalImg(String localPath) {
         File file = new File(localPath);
         if(!file.exists()){
-            throw new MyException("本地文件不存在");
+            throw new BizException("本地文件不存在");
         }
         QETag tag = new QETag();
         String hash = null;

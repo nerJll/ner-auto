@@ -7,7 +7,7 @@ import com.aliyun.oss.model.PutObjectResult;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.mysiteforme.admin.entity.Rescource;
 import com.mysiteforme.admin.entity.UploadInfo;
-import com.mysiteforme.admin.exception.MyException;
+import com.mysiteforme.admin.exception.BizException;
 import com.mysiteforme.admin.service.RescourceService;
 import com.mysiteforme.admin.service.UploadInfoService;
 import com.mysiteforme.admin.service.UploadService;
@@ -104,7 +104,7 @@ public class OssUploadServiceImpl implements UploadService {
             getOSSClient().shutdown();
             is.close();
         } catch (Exception e) {
-            throw new MyException("上传阿里云OSS服务器异常." + e.getMessage());
+            throw new BizException("上传阿里云OSS服务器异常." + e.getMessage());
         }
         return returnUrl.toString();
     }
@@ -169,7 +169,7 @@ public class OssUploadServiceImpl implements UploadService {
     public String uploadLocalImg(String localPath) {
         File file = new File(localPath);
         if(!file.exists()){
-            throw new MyException("本地文件不存在");
+            throw new BizException("本地文件不存在");
         }
         QETag tag = new QETag();
         String hash = null;

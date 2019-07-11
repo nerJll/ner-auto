@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by wangl on 2018/1/25.
+ * Created by jll on 2018/1/25.
  * todo: Spring 工具包 获取bean类
  */
 @Component

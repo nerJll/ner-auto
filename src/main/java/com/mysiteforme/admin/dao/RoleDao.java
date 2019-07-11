@@ -12,7 +12,7 @@ import java.util.Set;
   *  Mapper 接口
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2017-10-31
  */
 public interface RoleDao extends BaseMapper<Role> {

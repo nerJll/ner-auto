@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
  * 文件上传配置 服务实现类
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-07-06
  */
 @Service

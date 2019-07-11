@@ -13,7 +13,7 @@ import com.mysiteforme.admin.base.DataEntity;
  * 博客内容
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-18
  */
 @TableName("blog_article")

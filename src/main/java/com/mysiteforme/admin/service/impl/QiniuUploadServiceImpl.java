@@ -3,7 +3,7 @@ package com.mysiteforme.admin.service.impl;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.mysiteforme.admin.entity.Rescource;
 import com.mysiteforme.admin.entity.UploadInfo;
-import com.mysiteforme.admin.exception.MyException;
+import com.mysiteforme.admin.exception.BizException;
 import com.mysiteforme.admin.service.RescourceService;
 import com.mysiteforme.admin.service.UploadInfoService;
 import com.mysiteforme.admin.service.UploadService;
@@ -58,7 +58,7 @@ public class QiniuUploadServiceImpl implements UploadService {
 
     private String getAuth(){
         if(getUploadInfo() == null){
-            throw new MyException("上传信息配置不存在");
+            throw new BizException("上传信息配置不存在");
         }
         Auth auth = Auth.create(getUploadInfo().getQiniuAccessKey(), getUploadInfo().getQiniuSecretKey());
         return auth.uploadToken(getUploadInfo().getQiniuBucketName());
@@ -168,7 +168,7 @@ public class QiniuUploadServiceImpl implements UploadService {
     public String uploadLocalImg(String localPath) {
         File file = new File(localPath);
         if(!file.exists()){
-            throw new MyException("本地文件不存在");
+            throw new BizException("本地文件不存在");
         }
         QETag tag = new QETag();
         String hash = null;

@@ -26,7 +26,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by wangl on 2017/12/2.
+ * Created by jll on 2017/12/2.
  * todo:
  */
 @Controller
@@ -35,7 +35,6 @@ public class RoleController extends BaseController{
     private static final Logger LOGGER = LoggerFactory.getLogger(RoleController.class);
 
     @GetMapping("list")
-    @SysLog("跳转角色列表页面")
     public String list(){
         return "admin/system/role/list";
     }

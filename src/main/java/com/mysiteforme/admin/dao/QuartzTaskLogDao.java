@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 任务执行日志 Mapper 接口
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-25
  */
 public interface QuartzTaskLogDao extends BaseMapper<QuartzTaskLog> {

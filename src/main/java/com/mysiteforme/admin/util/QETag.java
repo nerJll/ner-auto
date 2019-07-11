@@ -1,7 +1,7 @@
 package com.mysiteforme.admin.util;
 
 /**
- * Created by wangl on 2018/1/14.
+ * Created by jll on 2018/1/14.
  * todo:计算文件在七牛云存储上的 hash 值
  */
 

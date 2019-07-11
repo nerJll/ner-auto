@@ -8,7 +8,7 @@ import org.springframework.data.redis.serializer.SerializationException;
 import java.nio.charset.Charset;
 
 /**
- * Created by wangl on 2018/1/21.
+ * Created by jll on 2018/1/21.
  * todo:
  */
 public class FastJson2JsonRedisSerializer<T> implements RedisSerializer<T> {

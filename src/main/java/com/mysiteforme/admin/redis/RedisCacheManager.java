@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 
 /**
- * Created by wangl on 2017/11/25.
+ * Created by jll on 2017/11/25.
  * todo:
  */
 public class RedisCacheManager implements CacheManager {

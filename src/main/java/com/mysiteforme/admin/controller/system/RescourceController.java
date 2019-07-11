@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wangl on 2018/1/14.
+ * Created by jll on 2018/1/14.
  * todo:
  */
 @Controller
@@ -30,7 +30,6 @@ public class RescourceController extends BaseController{
     private static final Logger LOGGER = LoggerFactory.getLogger(RescourceController.class);
 
     @GetMapping("list")
-    @SysLog("跳转资源展示列表")
     public String list(){
         return "admin/system/rescource/list";
     }

@@ -49,7 +49,6 @@ public class TableController extends BaseController{
      * @return
      */
     @GetMapping("list")
-    @SysLog("跳转数据表列表页面")
     public String list(){
         return "admin/system/table/list";
     }

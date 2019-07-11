@@ -8,7 +8,7 @@ import com.mysiteforme.admin.entity.Group;
  *  服务类
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2017-10-31
  */
 public interface GroupService extends IService<Group> {

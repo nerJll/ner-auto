@@ -5,9 +5,19 @@ import com.mysiteforme.admin.realm.AuthRealm.ShiroUser;
 import com.mysiteforme.admin.service.*;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
+
+import javax.servlet.http.HttpServletRequest;
 
 public class BaseController {
-	
+
+	protected HttpServletRequest request;
+
+	@InitBinder
+	public void initBinder(WebDataBinder binder) {
+	}
+
 	public User getCurrentUser() {
 		ShiroUser shiroUser = (ShiroUser) SecurityUtils.getSubject().getPrincipal();
 		if(shiroUser == null) {

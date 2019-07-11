@@ -6,7 +6,7 @@ import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 
 /**
- * Created by wangl on 2017/11/26.
+ * Created by jll on 2017/11/26.
  * todo:
  */
 public class SessionUtil {

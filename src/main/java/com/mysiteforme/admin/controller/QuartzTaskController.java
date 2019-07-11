@@ -33,7 +33,7 @@ import java.util.Map;
  * 定时任务  前端控制器
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-24
  */
 @Controller
@@ -46,7 +46,6 @@ public class QuartzTaskController {
     private QuartzTaskService quartzTaskService;
 
     @GetMapping("list")
-    @SysLog("跳转定时任务列表")
     public String list(){
         return "/admin/quartzTask/list";
     }
@@ -90,7 +89,7 @@ public class QuartzTaskController {
 
     @RequiresPermissions("quartz:task:add")
     @PostMapping("add")
-    @SysLog("保存新增定时任务数据")
+    @SysLog("新增定时任务数据")
     @ResponseBody
     public RestResponse add(QuartzTask quartzTask){
         quartzTaskService.saveQuartzTask(quartzTask);
@@ -107,7 +106,7 @@ public class QuartzTaskController {
     @RequiresPermissions("quartz:task:edit")
     @PostMapping("edit")
     @ResponseBody
-    @SysLog("保存编辑定时任务数据")
+    @SysLog("编辑定时任务数据")
     public RestResponse edit(QuartzTask quartzTask){
         if(null == quartzTask.getId() || 0 == quartzTask.getId()){
             return RestResponse.failure("ID不能为空");

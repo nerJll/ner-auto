@@ -61,7 +61,6 @@
             return m;
         }
         for(i=-14; i<=0;i++){
-            console.log(getDay(i));
             dateArray.push(getDay(i));
         }
         $.get('${base}/admin/system/log/pvs').done(function (res) {

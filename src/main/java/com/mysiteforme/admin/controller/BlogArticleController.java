@@ -2,39 +2,29 @@ package com.mysiteforme.admin.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.mapper.Condition;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.google.common.collect.Maps;
+import com.mysiteforme.admin.annotation.SysLog;
 import com.mysiteforme.admin.base.BaseController;
+import com.mysiteforme.admin.entity.BlogArticle;
 import com.mysiteforme.admin.entity.BlogChannel;
 import com.mysiteforme.admin.entity.BlogTags;
 import com.mysiteforme.admin.entity.VO.ZtreeVO;
-import com.mysiteforme.admin.lucene.LuceneSearch;
-import com.mysiteforme.admin.service.BlogChannelService;
-import com.xiaoleilu.hutool.date.DateUtil;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.mysiteforme.admin.entity.BlogArticle;
-import com.mysiteforme.admin.service.BlogArticleService;
-import com.baomidou.mybatisplus.plugins.Page;
 import com.mysiteforme.admin.util.LayerData;
 import com.mysiteforme.admin.util.RestResponse;
-import com.mysiteforme.admin.annotation.SysLog;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.io.IOException;
-import java.util.Date;
+import com.xiaoleilu.hutool.date.DateUtil;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.WebUtils;
 
 import javax.servlet.ServletRequest;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -43,7 +33,7 @@ import java.util.Map;
  * 博客内容  前端控制器
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-19
  */
 @Controller
@@ -52,7 +42,6 @@ public class BlogArticleController extends BaseController{
     private static final Logger LOGGER = LoggerFactory.getLogger(BlogArticleController.class);
 
     @GetMapping("list")
-    @SysLog("跳转博客内容列表")
     public String list(){
         return "/admin/blogArticle/list";
     }
@@ -121,7 +110,7 @@ public class BlogArticleController extends BaseController{
 
     @RequiresPermissions("blog:article:add")
     @PostMapping("add")
-    @SysLog("保存新增博客内容数据")
+    @SysLog("新增博客内容数据")
     @ResponseBody
     public RestResponse add(@RequestBody BlogArticle blogArticle){
         if(StringUtils.isBlank(blogArticle.getTitle())){
@@ -166,7 +155,7 @@ public class BlogArticleController extends BaseController{
     @RequiresPermissions("blog:article:edit")
     @PostMapping("edit")
     @ResponseBody
-    @SysLog("保存编辑博客内容数据")
+    @SysLog("编辑博客内容数据")
     public RestResponse edit(@RequestBody BlogArticle blogArticle){
         if(null == blogArticle.getId() || 0 == blogArticle.getId()){
             return RestResponse.failure("ID不能为空");

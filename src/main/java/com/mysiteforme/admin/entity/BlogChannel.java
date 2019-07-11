@@ -10,7 +10,7 @@ import com.mysiteforme.admin.base.TreeEntity;
  * 博客栏目
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-18
  */
 @TableName("blog_channel")

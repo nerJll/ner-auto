@@ -35,7 +35,7 @@ import java.util.Map;
  * 博客评论  前端控制器
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-18
  */
 @Controller
@@ -47,7 +47,6 @@ public class BlogCommentController {
     private BlogCommentService blogCommentService;
 
     @GetMapping("list")
-    @SysLog("跳转博客评论列表")
     public String list(){
         return "/admin/blogComment/list";
     }
@@ -149,7 +148,6 @@ public class BlogCommentController {
     @RequiresPermissions("blog:comment:reply")
     @PostMapping("adminReplay")
     @ResponseBody
-    @SysLog("管理员回复")
     public RestResponse adminReplay(BlogComment blogComment){
         if(null == blogComment.getId() || 0 == blogComment.getId()){
             return RestResponse.failure("ID不能为空");

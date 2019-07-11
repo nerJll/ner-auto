@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.service.IService;
  * 文件上传配置 服务类
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-07-06
  */
 public interface UploadInfoService extends IService<UploadInfo> {

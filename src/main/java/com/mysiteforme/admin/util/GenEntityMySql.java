@@ -29,7 +29,7 @@ public class GenEntityMySql {
         gc.setEnableCache(false);// XML 二级缓存
         gc.setBaseResultMap(true);// XML ResultMap
         gc.setBaseColumnList(false);// XML columList
-        gc.setAuthor("wangl");
+        gc.setAuthor("jll");
 
         // 自定义文件命名，注意 %s 会自动填充表实体属性！
          gc.setMapperName("%sDao");
@@ -53,7 +53,7 @@ public class GenEntityMySql {
             }
         });
         dsc.setDriverName("com.mysql.jdbc.Driver");
-        dsc.setUsername("wangl");
+        dsc.setUsername("jll");
         dsc.setPassword("123456");
         dsc.setUrl("jdbc:mysql://127.0.0.1:3306/ner-auto?useUnicode=true&characterEncoding=UTF-8");
         mpg.setDataSource(dsc);

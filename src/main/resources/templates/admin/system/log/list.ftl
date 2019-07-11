@@ -152,13 +152,13 @@
                 {field:'username',       title: '操作者'},
                 {field:'requestUri',    title: '请求地址'},
                 {field:'httpMethod',    title: '操作方式'},
+                {field:'browser',    title: '浏览器'},
+                /*{field:'exception',    title: '异常信息'},
                 {field:'classMethod',    title: '请求方法'},
                 {field:'id',    title: '请求参数',templet:'#params'},
                 {field:'sessionId',    title: 'sessionId'},
                 {field:'id',    title: '返回内容',templet:'#response'},
-                {field:'useTime',    title: '执行时间(ms)'},
-                {field:'browser',    title: '浏览器'},
-                {field:'exception',    title: '异常信息'},
+                {field:'useTime',    title: '执行时间(ms)'},*/
                 {field:'createDate',  title: '创建时间',templet:'<div>{{ layui.laytpl.toDateString(d.createDate) }}</div>',unresize: true}, //单元格内容水平居中
                 {fixed: 'right', title: '操作',width: '10%',align: 'center',toolbar: '#barDemo'}
             ]]

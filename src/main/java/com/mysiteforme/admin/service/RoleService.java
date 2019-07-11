@@ -12,7 +12,7 @@ import java.util.Set;
  *  服务类
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2017-10-31
  */
 public interface RoleService extends IService<Role> {

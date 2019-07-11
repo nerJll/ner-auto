@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wangl on 2018/1/22.
+ * Created by jll on 2018/1/22.
  * todo: 当前栏目(文章)父栏目集合
  */
 @Component

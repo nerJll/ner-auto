@@ -142,7 +142,6 @@
                 var checkStatus = table.checkStatus('test'),
                         data = checkStatus.data;
                 if(data.length > 0){
-                    console.log(JSON.stringify(data));
                     layer.confirm("你确定要删除这些角色么？",{btn:['是的,我确定','我再想想']},
                             function(){
                                 var deleteindex = layer.msg('删除中，请稍候',{icon: 16,time:false,shade:0.8});

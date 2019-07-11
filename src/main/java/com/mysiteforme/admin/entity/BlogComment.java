@@ -12,7 +12,7 @@ import java.util.List;
  * 博客评论
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-18
  */
 @TableName("blog_comment")

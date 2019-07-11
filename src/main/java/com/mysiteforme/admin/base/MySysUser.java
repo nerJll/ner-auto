@@ -4,7 +4,7 @@ import com.mysiteforme.admin.realm.AuthRealm.ShiroUser;
 import org.apache.shiro.SecurityUtils;
 
 /**
- * Created by wangl on 2017/11/25.
+ * Created by jll on 2017/11/25.
  * todo:
  */
 public class MySysUser {

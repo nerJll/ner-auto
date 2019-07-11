@@ -20,7 +20,7 @@ import javax.servlet.ServletRequest;
 import java.util.Map;
 
 /**
- * Created by wangl on 2018/1/1.
+ * Created by jll on 2018/1/1.
  * todo:
  */
 @Controller
@@ -39,7 +39,6 @@ public class DictController extends BaseController{
     }
 
     @GetMapping("list")
-    @SysLog("跳转系统字典页面")
     public String list(){
         return "admin/system/dict/list";
     }

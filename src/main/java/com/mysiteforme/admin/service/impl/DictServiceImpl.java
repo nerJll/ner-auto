@@ -20,7 +20,7 @@ import java.util.List;
  * 字典表 服务实现类
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2017-11-26
  */
 @Service

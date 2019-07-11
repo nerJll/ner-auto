@@ -10,7 +10,7 @@ import com.mysiteforme.admin.base.DataEntity;
  * 系统日志
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-13
  */
 @TableName("sys_log")

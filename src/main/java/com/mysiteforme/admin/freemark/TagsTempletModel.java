@@ -1,7 +1,7 @@
 package com.mysiteforme.admin.freemark;
 
 import com.mysiteforme.admin.entity.BlogTags;
-import com.mysiteforme.admin.exception.MyException;
+import com.mysiteforme.admin.exception.BizException;
 import com.mysiteforme.admin.service.BlogTagsService;
 import freemarker.core.Environment;
 import freemarker.template.*;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wangl on 2018/2/4.
+ * Created by jll on 2018/2/4.
  * todo: 获取文章的标签集合
  */
 @Component
@@ -40,7 +40,7 @@ public class TagsTempletModel extends BaseDirective implements TemplateDirective
             }
         }
         if(aid != null && cid != null){
-            throw new MyException("文章ID跟栏目ID不能同时存在");
+            throw new BizException("文章ID跟栏目ID不能同时存在");
         }
         List<BlogTags> list  = null;
         if(aid != null){

@@ -4,6 +4,7 @@
     <!-- 这儿定义一个resultMap -->
     <resultMap type="com.mysiteforme.admin.entity.User" id="UserMap">
         <id property="id" column="id"/>
+        <id property="tenantId" column="tenant_id"/>
         <result property="loginName" column="login_name"/>
         <result property="nickName" column="nick_name"/>
         <result property="tel" column="tel"/>

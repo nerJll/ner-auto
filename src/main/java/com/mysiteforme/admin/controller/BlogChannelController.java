@@ -29,7 +29,7 @@ import java.util.List;
  * 博客栏目  前端控制器
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-17
  */
 @Controller
@@ -38,7 +38,6 @@ public class BlogChannelController extends BaseController{
     private static final Logger LOGGER = LoggerFactory.getLogger(BlogChannelController.class);
 
     @GetMapping("list")
-    @SysLog("跳转博客栏目列表")
     public String list(){
         return "/admin/blogChannel/list";
     }
@@ -66,7 +65,7 @@ public class BlogChannelController extends BaseController{
 
     @RequiresPermissions("blog:channel:add")
     @PostMapping("add")
-    @SysLog("保存新增博客栏目数据")
+    @SysLog("新增博客栏目数据")
     @ResponseBody
     public RestResponse add(BlogChannel blogChannel){
         if(StringUtils.isBlank(blogChannel.getName())){
@@ -123,7 +122,7 @@ public class BlogChannelController extends BaseController{
     @RequiresPermissions("blog:channel:edit")
     @PostMapping("edit")
     @ResponseBody
-    @SysLog("保存编辑博客栏目数据")
+    @SysLog("编辑博客栏目数据")
     public RestResponse edit(BlogChannel blogChannel){
         if(null == blogChannel.getId() || 0 == blogChannel.getId()){
             return RestResponse.failure("ID不能为空");

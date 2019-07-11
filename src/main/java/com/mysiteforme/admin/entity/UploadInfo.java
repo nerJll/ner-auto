@@ -10,7 +10,7 @@ import com.mysiteforme.admin.base.DataEntity;
  * 文件上传配置
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-07-06
  */
 @TableName("upload_info")

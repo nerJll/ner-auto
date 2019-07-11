@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
  * 任务执行日志 服务实现类
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-25
  */
 @Service

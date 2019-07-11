@@ -127,7 +127,6 @@
                 var checkStatus = table.checkStatus('test'),
                      data = checkStatus.data;
                 if(data.length > 0){
-                    console.log(JSON.stringify(data));
                     for(var i=0;i<data.length;i++){
                         var d = data[i];
                         if(d.id == 1){

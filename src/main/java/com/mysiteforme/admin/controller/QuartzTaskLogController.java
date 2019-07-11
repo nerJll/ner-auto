@@ -33,7 +33,7 @@ import java.util.Map;
  * 任务执行日志  前端控制器
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-25
  */
 @Controller
@@ -45,7 +45,6 @@ public class QuartzTaskLogController {
     private QuartzTaskLogService quartzTaskLogService;
 
     @GetMapping("list")
-    @SysLog("跳转任务执行日志列表")
     public String list(){
         return "/admin/quartzTaskLog/list";
     }

@@ -192,8 +192,6 @@
             ,limit:10
             ,jump: function(obj, first){
                 //obj包含了当前分页的所有参数，比如：
-                console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
-                console.log(obj.limit); //得到每页显示的条数
                 if(!first){
                     location.href="${base+"/showBlog"+channel.href}?page="+obj.curr+"&limit="+obj.limit;
                 }

@@ -8,32 +8,27 @@ import com.mysiteforme.admin.base.BaseController;
 import com.mysiteforme.admin.entity.BlogArticle;
 import com.mysiteforme.admin.entity.BlogChannel;
 import com.mysiteforme.admin.entity.BlogComment;
-import com.mysiteforme.admin.exception.MyException;
+import com.mysiteforme.admin.exception.BizException;
 import com.mysiteforme.admin.lucene.LuceneSearch;
 import com.mysiteforme.admin.util.Constants;
 import com.mysiteforme.admin.util.RestResponse;
 import com.mysiteforme.admin.util.ToolUtil;
 import com.xiaoleilu.hutool.date.DateUtil;
-import com.xiaoleilu.hutool.http.HTMLFilter;
 import com.xiaoleilu.hutool.log.Log;
 import com.xiaoleilu.hutool.log.LogFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.NoHandlerFoundException;
 
-import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wangl on 2018/1/21.
+ * Created by jll on 2018/1/21.
  * todo:
  */
 @RequestMapping("showBlog")
@@ -93,7 +88,7 @@ public class BlogPageController extends BaseController{
         Map<String,Object> map = Maps.newHashMap();
         BlogChannel blogChannel = blogChannelService.getChannelByHref(href);
         if(blogChannel == null){
-            throw new MyException("地址没找到",404);
+            throw new BizException("地址没找到",404);
         }
         if(blogChannel.getParentId() == null){
             map.put("rootId",blogChannel.getParentIds());
@@ -137,11 +132,11 @@ public class BlogPageController extends BaseController{
     public String articleContent(@PathVariable(value = "articleId",required = false)Long articleId,
                                  Model model){
         if(articleId == null || articleId <= 0){
-            throw new MyException("文章ID不能为空");
+            throw new BizException("文章ID不能为空");
         }
         BlogArticle article = blogArticleService.selectOneDetailById(articleId);
         if(article == null){
-            throw new MyException("文章ID不存在");
+            throw new BizException("文章ID不存在");
         }
         model.addAttribute("article",article);
         return "blog/articleContent";
@@ -372,7 +367,7 @@ public class BlogPageController extends BaseController{
         }
         BlogChannel blogChannel = blogChannelService.getChannelByHref(href);
         if(blogChannel == null){
-            throw new MyException("地址没找到",404);
+            throw new BizException("地址没找到",404);
         }
         model.addAttribute("channel",blogChannel);
         EntityWrapper<BlogArticle> wrapper = new EntityWrapper<>();
@@ -400,7 +395,7 @@ public class BlogPageController extends BaseController{
         }
         BlogChannel blogChannel = blogChannelService.getChannelByHref(href);
         if(blogChannel == null){
-            throw new MyException("地址没找到",404);
+            throw new BizException("地址没找到",404);
         }
         model.addAttribute("channel",blogChannel);
         List<BlogArticle> list = blogArticleService.selectTimeLineList(blogChannel.getId());
@@ -442,7 +437,7 @@ public class BlogPageController extends BaseController{
         }
         BlogChannel blogChannel = blogChannelService.getChannelByHref(href);
         if(blogChannel == null){
-            throw new MyException("地址没找到",404);
+            throw new BizException("地址没找到",404);
         }
         model.addAttribute("channel",blogChannel);
         return "blog/share";

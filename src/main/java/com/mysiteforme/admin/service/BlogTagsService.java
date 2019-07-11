@@ -12,7 +12,7 @@ import java.util.Map;
  * 博客标签 服务类
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-17
  */
 public interface BlogTagsService extends IService<BlogTags> {

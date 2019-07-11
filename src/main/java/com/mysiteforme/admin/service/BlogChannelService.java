@@ -13,7 +13,7 @@ import java.util.List;
  * 博客栏目 服务类
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-17
  */
 public interface BlogChannelService extends IService<BlogChannel> {

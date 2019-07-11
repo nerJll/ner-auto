@@ -17,7 +17,6 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
 			openTabNum : "50",  //最大可打开窗口数量
 			url : baseUrl+"/admin/system/user/getUserMenu" //获取菜单json地址
 		});
-		console.log(tab);
 
 	//更换皮肤
 	function skins(){

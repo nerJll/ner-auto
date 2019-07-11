@@ -12,7 +12,7 @@ import java.util.Map;
  * 博客栏目 Mapper 接口
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-17
  */
 public interface BlogChannelDao extends BaseMapper<BlogChannel> {

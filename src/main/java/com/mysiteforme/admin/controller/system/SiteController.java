@@ -28,7 +28,7 @@ import javax.servlet.http.HttpServletRequest;
  * 前端控制器
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2017-12-30
  */
 @Controller
@@ -47,7 +47,6 @@ public class SiteController extends BaseController {
 
     @RequiresPermissions("sys:site:list")
     @GetMapping("show")
-    @SysLog("跳转网站展示页面")
     public String show(Model model) {
         Site site = siteService.getCurrentSite();
         model.addAttribute("site", site);

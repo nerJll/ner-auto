@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by wangl on 2017/11/21.
+ * Created by jll on 2017/11/21.
  *
  */
 @Controller
@@ -37,7 +37,6 @@ public class UserConteroller extends BaseController{
     private static final Logger LOGGER = LoggerFactory.getLogger(UserConteroller.class);
 
     @GetMapping("list")
-    @SysLog("跳转系统用户列表页面")
     public String list(){
         return "admin/system/user/list";
     }
@@ -73,7 +72,7 @@ public class UserConteroller extends BaseController{
     @RequiresPermissions("sys:user:add")
     @PostMapping("add")
     @ResponseBody
-    @SysLog("保存新增系统用户数据")
+    @SysLog("新增系统用户数据")
     public RestResponse add(@RequestBody  User user){
         if(StringUtils.isBlank(user.getLoginName())){
             return RestResponse.failure("登录名不能为空");
@@ -124,7 +123,7 @@ public class UserConteroller extends BaseController{
     @RequiresPermissions("sys:user:edit")
     @PostMapping("edit")
     @ResponseBody
-    @SysLog("保存系统用户编辑数据")
+    @SysLog("系统用户编辑数据")
     public RestResponse edit(@RequestBody  User user){
         if(user.getId() == 0 || user.getId() == null){
             return RestResponse.failure("用户ID不能为空");

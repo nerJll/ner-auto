@@ -1,12 +1,8 @@
 package com.mysiteforme.admin.freemark;
 
-import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.mysiteforme.admin.entity.BlogArticle;
-import com.mysiteforme.admin.entity.BlogChannel;
-import com.mysiteforme.admin.exception.MyException;
 import com.mysiteforme.admin.service.BlogArticleService;
-import com.mysiteforme.admin.service.BlogChannelService;
 import freemarker.core.Environment;
 import freemarker.template.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wangl on 2018/1/20.
+ * Created by jll on 2018/1/20.
  * todo:获取文章列表数据（可选参数：排序，集合长度）
  */
 @Component

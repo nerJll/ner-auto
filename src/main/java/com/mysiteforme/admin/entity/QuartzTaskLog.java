@@ -10,7 +10,7 @@ import com.mysiteforme.admin.base.DataEntity;
  * 任务执行日志
  * </p>
  *
- * @author wangl
+ * @author jll
  * @since 2018-01-25
  */
 @TableName("quartz_task_log")

@@ -1,6 +1,6 @@
 package com.mysiteforme.admin.util.quartz;
 
-import com.mysiteforme.admin.exception.MyException;
+import com.mysiteforme.admin.exception.BizException;
 import com.mysiteforme.admin.util.SpringUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.ReflectionUtils;
@@ -40,7 +40,7 @@ public class ScheduleRunnable implements Runnable {
 				method.invoke(target);
 			}
 		}catch (Exception e) {
-			throw new MyException("执行定时任务失败", e);
+			throw new BizException("执行定时任务失败", e);
 		}
 	}
 

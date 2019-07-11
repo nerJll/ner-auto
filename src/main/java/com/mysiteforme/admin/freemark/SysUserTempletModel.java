@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * Created by wangl on 2018/1/23.
+ * Created by jll on 2018/1/23.
  * todo: 根据用户ID获取用户详情
  */
 @Component

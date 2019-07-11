@@ -403,7 +403,6 @@
                 layer.msg("请选择一个栏目");
                 return false;
             }
-            console.log("原来的值为:"+$("#oldChannelId").val()+"---现在的值为:"+data.field.channelId);
             if($("#oldChannelId").val() !== data.field.channelId){
                 layer.msg('栏目已经发生改变,你确定要这么做么？', {
                     btn: ['我确定','我再想想'],
