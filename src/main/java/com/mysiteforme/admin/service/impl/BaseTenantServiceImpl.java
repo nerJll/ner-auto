@@ -1,15 +1,12 @@
 package com.mysiteforme.admin.service.impl;
 
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.mchange.lang.LongUtils;
-import com.mysiteforme.admin.entity.BaseTenant;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.mysiteforme.admin.dao.BaseTenantDao;
+import com.mysiteforme.admin.entity.BaseTenant;
 import com.mysiteforme.admin.entity.User;
 import com.mysiteforme.admin.exception.BizException;
 import com.mysiteforme.admin.service.BaseTenantService;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.mysiteforme.admin.service.UserService;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

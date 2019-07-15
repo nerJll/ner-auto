@@ -5,9 +5,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
 import com.mysiteforme.admin.entity.User;
 import com.xiaoleilu.hutool.http.HttpUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import java.beans.BeanInfo;
@@ -19,10 +18,8 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+@Slf4j
 public class ToolUtil {
-
-	public static final Logger LOGGER = LoggerFactory.getLogger(ToolUtil.class);
-
 	/**
 	 * 设定安全的密码，生成随机的salt并经过1024次 sha-1 hash
 	 */
@@ -58,7 +55,7 @@ public class ToolUtil {
 	 */
 	public static String getClientIp(HttpServletRequest request) {
 		String ip = request.getHeader("X-Real-IP");
-		LOGGER.info("ipadd : " + ip);
+		log.info("ipadd : " + ip);
 		if (StringUtils.isBlank(ip) || "unknown".equalsIgnoreCase(ip)) {
 			ip = request.getHeader("X-Forwarded-For");
 		}
@@ -71,7 +68,7 @@ public class ToolUtil {
 		if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
 			ip = request.getRemoteAddr();
 		}
-		LOGGER.info(" ip --> " + ip);
+		log.info(" ip --> " + ip);
 		return ip;
 	}
 	
@@ -276,10 +273,10 @@ public class ToolUtil {
 	public static void main(String args[]) throws Exception {
 		//long t1 = System.currentTimeMillis();
 		//Map<String,String> map = getAddressByIP("0.0.0.0");
-		//LOGGER.info("地区："+map.get("country"));
-		//LOGGER.info("省："+map.get("province"));
-		//LOGGER.info("市："+map.get("city"));
-		//LOGGER.info("互联网服务提供商："+map.get("isp"));
+		//log.info("地区："+map.get("country"));
+		//log.info("省："+map.get("province"));
+		//log.info("市："+map.get("city"));
+		//log.info("互联网服务提供商："+map.get("isp"));
 		//long t2 = System.currentTimeMillis();
 		//System.out.println("执行时间为"+(t2-t1));
 

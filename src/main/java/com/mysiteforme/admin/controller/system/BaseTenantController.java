@@ -1,35 +1,23 @@
 package com.mysiteforme.admin.controller.system;
 
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.mysiteforme.admin.annotation.SysLog;
 import com.mysiteforme.admin.base.BaseController;
-import com.mysiteforme.admin.entity.User;
+import com.mysiteforme.admin.entity.BaseTenant;
+import com.mysiteforme.admin.service.BaseTenantService;
 import com.mysiteforme.admin.service.UserService;
-import com.xiaoleilu.hutool.date.DateUtil;
+import com.mysiteforme.admin.util.LayerData;
+import com.mysiteforme.admin.util.RestResponse;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.mysiteforme.admin.entity.BaseTenant;
-import com.mysiteforme.admin.service.BaseTenantService;
-import com.baomidou.mybatisplus.plugins.Page;
-import com.mysiteforme.admin.util.LayerData;
-import com.mysiteforme.admin.util.RestResponse;
-import com.mysiteforme.admin.annotation.SysLog;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.Date;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.WebUtils;
 
 import javax.servlet.ServletRequest;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -43,8 +31,6 @@ import java.util.Map;
 @Controller
 @RequestMapping("/admin/baseTenant")
 public class BaseTenantController extends BaseController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(BaseTenantController.class);
-
     private final BaseTenantService baseTenantService;
     private final UserService userService;
 
@@ -66,6 +52,7 @@ public class BaseTenantController extends BaseController {
     public LayerData<BaseTenant> list(@RequestParam(value = "page", defaultValue = "1") Integer page,
                                       @RequestParam(value = "limit", defaultValue = "10") Integer limit,
                                       ServletRequest request) {
+        System.out.println(super.request.getRequestURL());
         Map map = WebUtils.getParametersStartingWith(request, "s_");
         LayerData<BaseTenant> layerData = new LayerData<>();
         EntityWrapper<BaseTenant> wrapper = new EntityWrapper<>();

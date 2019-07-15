@@ -4,9 +4,7 @@ package com.mysiteforme.admin.dao;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.mysiteforme.admin.entity.Role;
 import com.mysiteforme.admin.entity.User;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Component;
 
 import java.util.Map;
 import java.util.Set;

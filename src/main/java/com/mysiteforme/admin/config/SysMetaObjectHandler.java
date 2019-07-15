@@ -2,7 +2,7 @@ package com.mysiteforme.admin.config;
 
 import com.baomidou.mybatisplus.mapper.MetaObjectHandler;
 import com.mysiteforme.admin.base.MySysUser;
-import com.sun.jmx.snmp.Timestamp;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.reflection.MetaObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,14 +15,12 @@ import java.util.Date;
  * @author chen
  */
 @Component
+@Slf4j
 public class SysMetaObjectHandler extends MetaObjectHandler {
-
-    private Logger logger = LoggerFactory.getLogger(getClass());
-
     //新增填充
     @Override
     public void insertFill(MetaObject metaObject) {
-        logger.info("正在调用该insert填充字段方法");
+        log.info("正在调用该insert填充字段方法");
         Object createDate = getFieldValByName("createDate",metaObject);
         Object createId = getFieldValByName("createId",metaObject);
         Object updateDate = getFieldValByName("updateDate",metaObject);
@@ -50,7 +48,7 @@ public class SysMetaObjectHandler extends MetaObjectHandler {
     //更新填充
     @Override
     public void updateFill(MetaObject metaObject) {
-        logger.info("正在调用该update填充字段方法");
+        log.info("正在调用该update填充字段方法");
         setFieldValByName("updateDate",new Date(), metaObject);
         Object updateId = getFieldValByName("updateId",metaObject);
         if (null == updateId) {

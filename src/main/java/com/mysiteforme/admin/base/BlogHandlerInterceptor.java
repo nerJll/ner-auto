@@ -1,10 +1,7 @@
 package com.mysiteforme.admin.base;
 
 import com.mysiteforme.admin.entity.Site;
-import com.mysiteforme.admin.entity.User;
 import com.mysiteforme.admin.service.SiteService;
-import com.mysiteforme.admin.service.UserService;
-import org.slf4j.Logger;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -21,8 +18,6 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Component
 public class BlogHandlerInterceptor implements HandlerInterceptor {
-    private static final Logger LOGGER = org.slf4j.LoggerFactory.getLogger(BlogHandlerInterceptor.class);
-
     @Autowired
     private SiteService siteService;
 

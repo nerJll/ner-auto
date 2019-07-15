@@ -1,8 +1,7 @@
 package com.mysiteforme.admin.dao;
 
-import com.mysiteforme.admin.entity.Dict;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import org.springframework.stereotype.Component;
+import com.mysiteforme.admin.entity.Dict;
 
 /**
  * <p>

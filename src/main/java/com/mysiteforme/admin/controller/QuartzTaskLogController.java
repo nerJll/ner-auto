@@ -1,31 +1,21 @@
 package com.mysiteforme.admin.controller;
 
-import com.xiaoleilu.hutool.date.DateUtil;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.mysiteforme.admin.annotation.SysLog;
+import com.mysiteforme.admin.entity.QuartzTaskLog;
+import com.mysiteforme.admin.service.QuartzTaskLogService;
+import com.mysiteforme.admin.util.LayerData;
+import com.mysiteforme.admin.util.RestResponse;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.mysiteforme.admin.entity.QuartzTaskLog;
-import com.mysiteforme.admin.service.QuartzTaskLogService;
-import com.baomidou.mybatisplus.plugins.Page;
-import com.mysiteforme.admin.util.LayerData;
-import com.mysiteforme.admin.util.RestResponse;
-import com.mysiteforme.admin.annotation.SysLog;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.Date;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.WebUtils;
 
 import javax.servlet.ServletRequest;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -39,8 +29,6 @@ import java.util.Map;
 @Controller
 @RequestMapping("/admin/quartzTaskLog")
 public class QuartzTaskLogController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(QuartzTaskLogController.class);
-
     @Autowired
     private QuartzTaskLogService quartzTaskLogService;
 

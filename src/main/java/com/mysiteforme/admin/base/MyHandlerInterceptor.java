@@ -1,13 +1,8 @@
 package com.mysiteforme.admin.base;
 
 import com.mysiteforme.admin.entity.User;
-import com.mysiteforme.admin.realm.AuthRealm.ShiroUser;
 import com.mysiteforme.admin.service.SiteService;
 import com.mysiteforme.admin.service.UserService;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.session.Session;
-import org.apache.shiro.util.Factory;
-import org.slf4j.Logger;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -24,8 +19,6 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Component
 public class MyHandlerInterceptor implements HandlerInterceptor {
-    private static final Logger LOGGER = org.slf4j.LoggerFactory.getLogger(MyHandlerInterceptor.class);
-
     @Autowired
     private SiteService siteService;
     @Autowired

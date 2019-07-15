@@ -1,11 +1,8 @@
 package com.mysiteforme.admin.freemark;
 
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.google.common.collect.Maps;
 import com.mysiteforme.admin.entity.BlogArticle;
-import com.mysiteforme.admin.entity.BlogChannel;
 import com.mysiteforme.admin.service.BlogArticleService;
-import com.mysiteforme.admin.service.BlogChannelService;
 import freemarker.core.Environment;
 import freemarker.template.*;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -35,3 +35,11 @@ source-code-zipfile:  G://ner-auto/源码.rar
 #搜索文件生成包的位置
 #本地路径
 lucence-dic:  G://ner-auto/lucence
+
+#文件上传
+qny:
+  accessKey: 5GgrzU12lRZUqJ5VAetEQ6S2kdP14QKgZQS0GuPv
+  secretKey: QWcfwtF-HgADHLFWtIzdWw0pDr0SM_eR6k-4HV3i
+  bucket: ner
+  path: ptw7inmfo.bkt.clouddn.com
+  uploadUrl: http://upload-z2.qiniup.com

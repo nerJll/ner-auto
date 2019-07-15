@@ -15,6 +15,6 @@ import java.util.List;
  */
 public interface LogService extends IService<Log> {
 
-    public List<Integer> selectSelfMonthData();
+    List<Integer> selectSelfMonthData();
 
 }

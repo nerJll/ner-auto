@@ -82,7 +82,7 @@
             <td>
                 <input type="radio" name="fileUploadType" value="local" title="本地上传" <#if (site.fileUploadType == "local") >checked=""</#if>   >
                 <input type="radio" name="fileUploadType" value="qiniu" title="七牛云存储" lay-filter="qiniuUpload" <#if (site.fileUploadType == "qiniu") >checked=""</#if>>
-                <input type="radio" name="fileUploadType" value="oss" title="阿里云存储" lay-filter="ossUpload" <#if (site.fileUploadType == "oss") >checked=""</#if>>
+                <input disabled type="radio" name="fileUploadType" value="oss" title="阿里云存储" lay-filter="ossUpload" <#if (site.fileUploadType == "oss") >checked=""</#if>>
             </td>
             <td>fileUploadType</td>
         </tr>

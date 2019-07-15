@@ -1,7 +1,7 @@
 package com.mysiteforme.admin.service;
 
-import com.mysiteforme.admin.entity.BaseTenant;
 import com.baomidou.mybatisplus.service.IService;
+import com.mysiteforme.admin.entity.BaseTenant;
 /**
  * <p>
  * 租户表 服务类

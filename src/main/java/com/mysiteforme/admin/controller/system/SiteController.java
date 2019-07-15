@@ -5,12 +5,12 @@ import com.mysiteforme.admin.annotation.SysLog;
 import com.mysiteforme.admin.base.BaseController;
 import com.mysiteforme.admin.entity.Site;
 import com.mysiteforme.admin.entity.UploadInfo;
+import com.mysiteforme.admin.service.SiteService;
+import com.mysiteforme.admin.service.UploadInfoService;
 import com.mysiteforme.admin.service.UploadService;
 import com.mysiteforme.admin.util.RestResponse;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -34,16 +34,16 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("/admin/system/site")
 public class SiteController extends BaseController {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(SiteController.class);
-
+    @Autowired
+    private UploadInfoService uploadInfoService;
     @Autowired
     @Qualifier("qiniuService")
     private UploadService qiniuService;
-
     @Autowired
     @Qualifier("ossService")
     private UploadService ossService;
+    @Autowired
+    private SiteService siteService;
 
     @RequiresPermissions("sys:site:list")
     @GetMapping("show")

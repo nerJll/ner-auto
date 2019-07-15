@@ -5,12 +5,12 @@ import com.baomidou.mybatisplus.plugins.Page;
 import com.mysiteforme.admin.annotation.SysLog;
 import com.mysiteforme.admin.base.BaseController;
 import com.mysiteforme.admin.entity.Dict;
+import com.mysiteforme.admin.service.DictService;
 import com.mysiteforme.admin.util.LayerData;
 import com.mysiteforme.admin.util.RestResponse;
-import com.xiaoleilu.hutool.log.Log;
-import com.xiaoleilu.hutool.log.LogFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +26,8 @@ import java.util.Map;
 @Controller
 @RequestMapping("admin/system/dict")
 public class DictController extends BaseController{
-    private static final Log log = LogFactory.get();
+    @Autowired
+    private DictService dictService;
 
     @PostMapping("deleteById")
     @ResponseBody

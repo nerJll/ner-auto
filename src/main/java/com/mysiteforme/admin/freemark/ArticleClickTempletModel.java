@@ -2,9 +2,7 @@ package com.mysiteforme.admin.freemark;
 
 import com.mysiteforme.admin.service.BlogArticleService;
 import freemarker.template.SimpleNumber;
-import freemarker.template.SimpleScalar;
 import freemarker.template.TemplateMethodModelEx;
-import freemarker.template.TemplateModelException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

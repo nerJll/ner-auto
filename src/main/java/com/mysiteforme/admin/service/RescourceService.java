@@ -1,7 +1,10 @@
 package com.mysiteforme.admin.service;
 
-import com.mysiteforme.admin.entity.Rescource;
 import com.baomidou.mybatisplus.service.IService;
+import com.mysiteforme.admin.entity.Rescource;
+
+import java.util.List;
+
 /**
  * <p>
  * 系统资源 服务类
@@ -16,4 +19,5 @@ public interface RescourceService extends IService<Rescource> {
 
     Rescource getRescourceByHash(String hash);
 
+    List<Rescource> getRescourceByHashs(List<String> hashs);
 }

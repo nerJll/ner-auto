@@ -1,6 +1,5 @@
 package com.mysiteforme.admin.freemark;
 
-import com.google.common.collect.Maps;
 import com.mysiteforme.admin.entity.BlogArticle;
 import com.mysiteforme.admin.service.BlogArticleService;
 import freemarker.core.Environment;

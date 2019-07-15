@@ -1,6 +1,5 @@
 package com.mysiteforme.admin.freemark;
 
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.mysiteforme.admin.entity.BlogChannel;
 import com.mysiteforme.admin.service.BlogChannelService;
 import freemarker.core.Environment;

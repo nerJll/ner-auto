@@ -1,7 +1,6 @@
 package com.mysiteforme.admin.entity;
 
 import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.mysiteforme.admin.base.DataEntity;
 

@@ -13,8 +13,6 @@ import com.qiniu.storage.model.FetchRet;
 import com.qiniu.util.Auth;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -23,13 +21,10 @@ import java.security.NoSuchAlgorithmException;
 import java.util.UUID;
 
 public class QiniuFileUtil {
-
-	private static final Logger LOGGER = LoggerFactory.getLogger(QiniuFileUtil.class);
-
-	private static String path = "https://static.mysiteforme.com/";
-	private static String qiniuAccess = "****************";
-	private static String qiniuKey = "****************";
-	private static String bucketName = "wanggg";
+	private static final String path = "ptw7inmfo.bkt.clouddn.com";
+	private static final String qiniuAccess = "5GgrzU12lRZUqJ5VAetEQ6S2kdP14QKgZQS0GuPv";
+	private static final String qiniuKey = "QWcfwtF-HgADHLFWtIzdWw0pDr0SM_eR6k-4HV3i";
+	private static final String bucketName = "ner";
 
 	/***
 	 * 普通上传图片
@@ -39,7 +34,7 @@ public class QiniuFileUtil {
 	 * @throws IOException
 	 */
 	public static String upload(MultipartFile file) throws IOException, NoSuchAlgorithmException {
-		Zone z = Zone.zone0();
+		Zone z = Zone.zone2();
 		Configuration config = new Configuration(z);
 		String fileName = "", extName = "", filePath = "";
 		if (null != file && !file.isEmpty()) {
@@ -80,7 +75,7 @@ public class QiniuFileUtil {
 	 * @param imgPath
 	 */
 	public static void deleteQiniuP(String imgPath) {
-		Zone z = Zone.zone0();
+		Zone z = Zone.zone2();
 		Configuration config = new Configuration(z);
 		Auth auth = Auth.create(qiniuAccess, qiniuKey);
 		BucketManager bucketManager = new BucketManager(auth,config);
@@ -98,7 +93,7 @@ public class QiniuFileUtil {
 	 * @return
 	 */
 	public static String uploadImageSrc(String src){
-		Zone z = Zone.zone0();
+		Zone z = Zone.zone2();
 		Configuration config = new Configuration(z);
 		Auth auth = Auth.create(qiniuAccess, qiniuKey);
 		BucketManager bucketManager = new BucketManager(auth, config);
@@ -127,7 +122,7 @@ public class QiniuFileUtil {
 	 * @return
 	 */
 	public static String uploadLocalImg(String src) throws IOException, NoSuchAlgorithmException{
-		Zone z = Zone.zone0();
+		Zone z = Zone.zone2();
 		Configuration config = new Configuration(z);
 		UploadManager uploadManager = new UploadManager(config);
 		Auth auth = Auth.create(qiniuAccess, qiniuKey);
@@ -171,7 +166,7 @@ public class QiniuFileUtil {
 	 * @return
 	 */
 	public static String uploadBase64(String base64,String name) {
-		Zone z = Zone.zone0();
+		Zone z = Zone.zone2();
 		Configuration config = new Configuration(z);
 		UploadManager uploadManager = new UploadManager(config);
 		Auth auth = Auth.create(qiniuAccess, qiniuKey);

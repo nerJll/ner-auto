@@ -1,33 +1,22 @@
 package com.mysiteforme.admin.controller;
 
-import com.mysiteforme.admin.util.ToolUtil;
-import com.xiaoleilu.hutool.date.DateUtil;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.mysiteforme.admin.annotation.SysLog;
+import com.mysiteforme.admin.entity.BlogComment;
+import com.mysiteforme.admin.service.BlogCommentService;
+import com.mysiteforme.admin.util.LayerData;
+import com.mysiteforme.admin.util.RestResponse;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.mysiteforme.admin.entity.BlogComment;
-import com.mysiteforme.admin.service.BlogCommentService;
-import com.baomidou.mybatisplus.plugins.Page;
-import com.mysiteforme.admin.util.LayerData;
-import com.mysiteforme.admin.util.RestResponse;
-import com.mysiteforme.admin.annotation.SysLog;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.Date;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.WebUtils;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -41,8 +30,6 @@ import java.util.Map;
 @Controller
 @RequestMapping("/admin/blogComment")
 public class BlogCommentController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(BlogCommentController.class);
-
     @Autowired
     private BlogCommentService blogCommentService;
 

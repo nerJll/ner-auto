@@ -1,12 +1,11 @@
 package com.mysiteforme.admin.entity;
 
-import java.util.Date;
-import java.util.List;
-
 import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.mysiteforme.admin.base.DataEntity;
+
+import java.util.Date;
+import java.util.List;
 
 /**
  * <p>

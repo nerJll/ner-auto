@@ -1,12 +1,10 @@
 package com.mysiteforme.admin.entity;
 
-import java.io.Serializable;
-
-import java.math.BigDecimal;
 import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.mysiteforme.admin.base.DataEntity;
+
+import java.io.Serializable;
 
 /**
  * <p>

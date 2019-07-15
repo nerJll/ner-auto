@@ -3,6 +3,7 @@ package com.mysiteforme.admin.config;
 import com.google.common.collect.Maps;
 import com.mysiteforme.admin.base.CaptchaFormAuthenticationFilter;
 import com.mysiteforme.admin.realm.AuthRealm;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.codec.Base64;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.session.mgt.SessionManager;
@@ -16,8 +17,6 @@ import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.crazycake.shiro.RedisCacheManager;
 import org.crazycake.shiro.RedisManager;
 import org.crazycake.shiro.RedisSessionDAO;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -36,9 +35,8 @@ import java.util.Map;
  * todo:
  */
 @Configuration
+@Slf4j
 public class ShiroConfig {
-    private Logger  logger = LoggerFactory.getLogger(ShiroConfig.class);
-
     @Value("${spring.redis.host}")
     private String jedisHost;
 
@@ -83,7 +81,7 @@ public class ShiroConfig {
 
     @Bean
     public SecurityManager securityManager(@Qualifier("authRealm")AuthRealm authRealm){
-        logger.info("- - - - - - -shiro开始加载- - - - - - ");
+        log.info("- - - - - - -shiro开始加载- - - - - - ");
         DefaultWebSecurityManager defaultWebSecurityManager = new DefaultWebSecurityManager();
         defaultWebSecurityManager.setRealm(authRealm);
         defaultWebSecurityManager.setRememberMeManager(rememberMeManager());

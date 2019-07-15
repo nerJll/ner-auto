@@ -3,6 +3,7 @@ package com.mysiteforme.admin;
 import com.alibaba.fastjson.JSONObject;
 import com.mysiteforme.admin.dao.MenuDao;
 import com.mysiteforme.admin.entity.Menu;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -15,17 +16,16 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@Slf4j
 public class AppApplicationTests {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(AppApplicationTests.class);
+    @Autowired
+    private MenuDao menuDao;
 
-	@Autowired
-	private MenuDao menuDao;
-
-	@Test
-	public void contextLoads() {
-		List<Menu> list = menuDao.getMenus(null);
-		LOGGER.info(JSONObject.toJSONString(list));
-	}
+    @Test
+    public void contextLoads() {
+        List<Menu> list = menuDao.getMenus(null);
+        log.info(JSONObject.toJSONString(list));
+    }
 
 }
