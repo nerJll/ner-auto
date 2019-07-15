@@ -26,7 +26,6 @@ public class MyHandlerInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) {
-//        LOGGER.info("当前请求路径.."+httpServletRequest.getRequestURI());
         if (siteService == null || userService == null) {//解决service为null无法注入问题
             System.out.println("siteService is null!!!");
             BeanFactory factory = WebApplicationContextUtils.getRequiredWebApplicationContext(httpServletRequest.getServletContext());

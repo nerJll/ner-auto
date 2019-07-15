@@ -18,6 +18,7 @@ import java.util.UUID;
  */
 @Service
 public class UploadService {
+    private static final String HTTP = "http://";
     @Autowired
     private QiniuConfiguration qiniuConfigration;
     /**
@@ -37,7 +38,7 @@ public class UploadService {
         }
         // 解析上传成功的结果
         DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class);
-        String fileUrl = qiniuConfigration.getPath() + "/" + putRet.key;
+        String fileUrl = HTTP + qiniuConfigration.getPath() + "/" + putRet.key;
         return fileUrl;
     }
 
@@ -53,7 +54,7 @@ public class UploadService {
         }
         // 解析上传成功的结果
         DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class);
-        String fileUrl = qiniuConfigration.getPath() + "/" + putRet.key;
+        String fileUrl = HTTP + qiniuConfigration.getPath() + "/" + putRet.key;
         return fileUrl;
     }
 

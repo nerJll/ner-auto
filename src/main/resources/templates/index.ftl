@@ -92,10 +92,10 @@
     </div>
     <!-- 左侧导航 -->
     <div class="layui-side layui-bg-black">
-        <div class="user-photo">
+        <#--<div class="user-photo">
             <a class="img" title="我的头像" ><img src="<#if (currentUser.icon??)>${currentUser.icon}<#else>${base}/static/images/face.jpg</#if>"></a>
             <p>你好！<span class="userName"><#if currentUser.nickName!''>${currentUser.nickName}<#else>${currentUser.loginName}</#if></span>, 欢迎登录</p>
-        </div>
+        </div>-->
         <div class="navBar layui-side-scroll"></div>
     </div>
     <!-- 右侧内容 -->

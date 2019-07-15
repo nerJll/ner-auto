@@ -131,7 +131,7 @@ public class SiteController extends BaseController {
         if (StringUtils.isNotBlank(site.getRemarks())) {
             site.setRemarks(site.getRemarks().replace("\"", "\'"));
         }
-        if ("oss".equals(site.getFileUploadType())) {
+        /*if ("oss".equals(site.getFileUploadType())) {
             UploadInfo uploadInfo = uploadInfoService.getOneInfo();
             if (StringUtils.isBlank(uploadInfo.getOssKeySecret()) ||
                     StringUtils.isBlank(uploadInfo.getOssKeyId()) ||
@@ -147,7 +147,7 @@ public class SiteController extends BaseController {
                     StringUtils.isBlank(uploadInfo.getQiniuBucketName())) {
                 return RestResponse.failure("七牛云存储信息不能为空");
             }
-        }
+        }*/
         siteService.updateSite(site);
         return RestResponse.success();
     }
