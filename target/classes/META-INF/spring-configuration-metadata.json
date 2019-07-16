@@ -2,34 +2,34 @@
   "hints": [],
   "groups": [
     {
-      "sourceType": "com.mysiteforme.admin.oss.QiniuConfiguration",
+      "sourceType": "com.ner.admin.oss.QiniuConfiguration",
       "name": "qny",
-      "type": "com.mysiteforme.admin.oss.QiniuConfiguration"
+      "type": "com.ner.admin.oss.QiniuConfiguration"
     }
   ],
   "properties": [
     {
-      "sourceType": "com.mysiteforme.admin.oss.QiniuConfiguration",
+      "sourceType": "com.ner.admin.oss.QiniuConfiguration",
       "name": "qny.access-key",
       "type": "java.lang.String"
     },
     {
-      "sourceType": "com.mysiteforme.admin.oss.QiniuConfiguration",
+      "sourceType": "com.ner.admin.oss.QiniuConfiguration",
       "name": "qny.bucket",
       "type": "java.lang.String"
     },
     {
-      "sourceType": "com.mysiteforme.admin.oss.QiniuConfiguration",
+      "sourceType": "com.ner.admin.oss.QiniuConfiguration",
       "name": "qny.path",
       "type": "java.lang.String"
     },
     {
-      "sourceType": "com.mysiteforme.admin.oss.QiniuConfiguration",
+      "sourceType": "com.ner.admin.oss.QiniuConfiguration",
       "name": "qny.secret-key",
       "type": "java.lang.String"
     },
     {
-      "sourceType": "com.mysiteforme.admin.oss.QiniuConfiguration",
+      "sourceType": "com.ner.admin.oss.QiniuConfiguration",
       "name": "qny.upload-url",
       "type": "java.lang.String"
     }

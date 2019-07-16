@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.mysiteforme.admin.dao.TableDao" >
+<mapper namespace="com.ner.admin.dao.TableDao" >
 
     <!--查询数据库中表的数量-->
     <select id="selectTableCount" resultType="java.lang.Integer">
@@ -19,13 +19,13 @@
     <select id="existTableField" parameterType="java.util.Map" resultType="java.lang.Integer">
         select count(*)
         from information_schema.columns
-        where table_schema ='mysiteforme'
+        where table_schema ='ner-auto'
         and table_name = #{tableName}
         and COLUMN_NAME = #{fieldName}
     </select>
 
     <!--查询所有表（不分页）-->
-    <select id="listAll" resultType="com.mysiteforme.admin.entity.VO.TableVO">
+    <select id="listAll" resultType="com.ner.admin.entity.VO.TableVO">
         select
         TABLE_NAME as "name",
         TABLE_ROWS as "tableRows",
@@ -35,7 +35,7 @@
         from information_schema.TABLES where TABLE_SCHEMA='ner-auto'
     </select>
     <!--查询所有表（分页）-->
-    <select id="listPage" resultType="com.mysiteforme.admin.entity.VO.TableVO">
+    <select id="listPage" resultType="com.ner.admin.entity.VO.TableVO">
         select
         TABLE_NAME as "name",
         TABLE_ROWS as "tableRows",
@@ -49,13 +49,13 @@
         ORDER BY CREATE_TIME DESC
     </select>
 
-    <resultMap id="fieldListDetail" type="com.mysiteforme.admin.entity.VO.TableField">
+    <resultMap id="fieldListDetail" type="com.ner.admin.entity.VO.TableField">
         <result property="name" column="name" />
         <result property="isNullValue" column="isNullValue"/>
         <result property="type" column="type"/>
         <result property="length" column="length"/>
         <result property="comment" column="comment"/>
-        <collection property="dictlist"  ofType="com.mysiteforme.admin.entity.Dict">
+        <collection property="dictlist"  ofType="com.ner.admin.entity.Dict">
             <result property="id" column="dictlist.id" />
             <result property="type" column="dictlist.type"/>
             <result property="label" column="dictlist.label"/>
@@ -93,10 +93,10 @@
         order by ORDINAL_POSITION
     </select>
 
-    <resultMap id="detailTable" type="com.mysiteforme.admin.entity.VO.TableVO">
+    <resultMap id="detailTable" type="com.ner.admin.entity.VO.TableVO">
         <result column="name" property="name" />
         <result column="comment" property="comment" />
-        <collection property="fieldList" ofType="com.mysiteforme.admin.entity.VO.TableField">
+        <collection property="fieldList" ofType="com.ner.admin.entity.VO.TableField">
             <result property="name" column="fieldList.name" />
             <result property="isNullValue" column="fieldList.isNullValue"/>
             <result property="type" column="fieldList.type"/>

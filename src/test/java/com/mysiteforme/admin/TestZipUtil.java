@@ -1,4 +1,4 @@
-package com.mysiteforme.admin;
+package com.ner.admin;
 
 import com.xiaoleilu.hutool.util.ZipUtil;
 import org.junit.Test;

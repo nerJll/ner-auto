@@ -25,14 +25,14 @@ spring:
 #日志
 logging:
   config: classpath:log/logback.xml
-  path: /home/log/mysiteforme
+  path: /home/log/ner
 
 #自定义配置属性
 #源码生成文件夹
 #本地路径
-source-code-dic: home/mysiteforme/mysite
-source-code-zipfile: home/mysiteforme/源码.rar
+source-code-dic: home/ner/mysite
+source-code-zipfile: home/ner/源码.rar
 
 #搜索文件生成包的位置
 #本地路径
-lucence-dic: home/mysiteforme/lucence
+lucence-dic: home/ner/lucence

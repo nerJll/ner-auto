@@ -2,11 +2,388 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1db0c4e7-a4ca-46da-8504-e9ea515b4e54" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MyHandlerInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MyHandlerInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/SiteController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/SiteController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/oss/UploadService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/oss/UploadService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.ftl" afterPath="$PROJECT_DIR$/target/classes/templates/index.ftl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/img/ban.ico" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/AppApplication.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/annotation/SysLog.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/aspect/WebLogAspect.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/BaseController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/BaseEntity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/BlogHandlerInterceptor.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/CaptchaFormAuthenticationFilter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/DataEntity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MyBatisDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MyHandlerInterceptor.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MySysUser.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/TreeEntity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/config/DruidDBConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/config/FastJson2JsonRedisSerializer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/config/FreemarkerConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/config/MybatisPlusConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/config/QuartzConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/config/RedisCacheConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/config/ShiroConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/config/SysMetaObjectHandler.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/config/WebMvcConfigurer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/BlogArticleController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/BlogChannelController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/BlogCommentController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/BlogTagsController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/DruidController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/LoginController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/QuartzTaskController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/QuartzTaskLogController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/BaseTenantController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/DictController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/FileController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/LogController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/MenuController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/RescourceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/RoleController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/SiteController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/TableController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/UserConteroller.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/web/BlogPageController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/BaseTenantDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/BlogArticleDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/BlogChannelDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/BlogCommentDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/BlogTagsDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/DictDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/GroupDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/LogDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/MenuDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/QuartzTaskDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/QuartzTaskLogDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/RescourceDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/RoleDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/SiteDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/TableDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/UploadInfoDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/dao/UserDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/BaseTenant.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/BlogArticle.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/BlogChannel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/BlogComment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/BlogTags.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/Dict.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/Group.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/Log.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/Menu.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/QuartzTask.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/QuartzTaskLog.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/Rescource.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/Role.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/Site.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/UploadInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/User.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/VO/ShowMenu.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/VO/TableField.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/VO/TableVO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/VO/TreeMenu.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/VO/ZtreeVO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/exception/BizException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/exception/GlobalExceptionHandler.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/ArticleClickTempletModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/ArticleDirective.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/BaseDirective.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/ChannelDirective.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/CommentNumberTempletModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/IndexArticleDirective.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/LookLikeArticlesTempletModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/NewCommentArticleTempletModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/ParentChannelListDirective.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/SysUserTempletModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/SystemDirective.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/freemark/TagsTempletModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/lucene/LuceneSearch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/oss/QiniuConfiguration.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/oss/UploadService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/realm/AuthRealm.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/redis/CacheUtils.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/redis/RedisCacheManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/redis/RedisObjectSerializer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/redis/RedisSessionDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/redis/ShiroCache.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BaseTenantService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BlogArticleService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BlogChannelService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BlogCommentService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BlogTagsService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/DictService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/GroupService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/IFileInfoService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/LogService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/MenuService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/QuartzTaskLogService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/QuartzTaskService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/RescourceService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/RoleService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/SiteService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/TableService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/UploadInfoService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/UploadService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/UserService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/BaseTenantServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/BlogArticleServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/BlogChannelServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/BlogCommentServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/BlogTagsServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/DictServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/FileInfoServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/GroupServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/LocalUploadServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/LogServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/MenuServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/OssUploadServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/QiniuUploadServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/QuartzTaskLogServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/QuartzTaskServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/RescourceServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/RoleServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/SiteServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/TableServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/UploadInfoServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/UserServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/Constants.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/CreateTableFiles.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/DigestUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/Digests.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/Encodes.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/Exceptions.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/GenEntityMySql.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/LayerData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/MyCompare.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/QETag.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/QiniuFileUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/RestResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/SessionUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/SpringContextHolder.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/SpringUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/ToolUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/Underline2Camel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/VerifyCodeUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/ZipUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/quartz/ScheduleJob.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/quartz/ScheduleRunnable.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/quartz/ScheduleUtils.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/quartz/task/SystemTask.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-test.yml" afterPath="$PROJECT_DIR$/src/main/resources/application-test.yml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/log/logback.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogArticleMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogArticleMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogChannelMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogChannelMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogCommentMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogCommentMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogTagsMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogTagsMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LogMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LogMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MenuMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MenuMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TableDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TableDao.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/ner-auto.sql" afterPath="$PROJECT_DIR$/src/main/resources/sql/ner-auto.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogChannel/list.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogChannel/list.ftl" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/about/author.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/about/author.ftl" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vm/controller.java.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/vm/controller.java.vm" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mysiteforme/admin/AppApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/mysiteforme/admin/AppApplicationTests.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mysiteforme/admin/TestZipUtil.java" afterPath="$PROJECT_DIR$/src/test/java/com/mysiteforme/admin/TestZipUtil.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.yml" afterPath="$PROJECT_DIR$/target/classes/application-prod.yml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-test.yml" afterPath="$PROJECT_DIR$/target/classes/application-test.yml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" afterPath="$PROJECT_DIR$/target/classes/application.yml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/AppApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/annotation/SysLog.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/aspect/WebLogAspect.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/base/BaseController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/base/BaseEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/base/BlogHandlerInterceptor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/base/CaptchaFormAuthenticationFilter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/base/DataEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/base/MyBatisDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/base/MyHandlerInterceptor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/base/MySysUser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/base/TreeEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/config/DruidDBConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/config/FastJson2JsonRedisSerializer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/config/FreemarkerConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/config/MybatisPlusConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/config/QuartzConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/config/RedisCacheConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/config/ShiroConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/config/SysMetaObjectHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/config/WebMvcConfigurer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/BlogArticleController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/BlogChannelController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/BlogCommentController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/BlogTagsController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/DruidController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/LoginController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/MenuComparator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/QuartzTaskController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/QuartzTaskLogController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/BaseTenantController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/DictController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/FileController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/LogController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/MenuController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/RescourceController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/RoleController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/SiteController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/TableController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/system/UserConteroller.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/controller/web/BlogPageController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/BaseTenantDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/BlogArticleDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/BlogChannelDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/BlogCommentDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/BlogTagsDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/DictDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/GroupDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/LogDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/MenuDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/QuartzTaskDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/QuartzTaskLogDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/RescourceDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/RoleDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/SiteDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/TableDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/UploadInfoDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/dao/UserDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/BaseTenant.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/BlogArticle.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/BlogChannel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/BlogComment.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/BlogTags.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/Dict.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/Group.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/Log.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/Menu.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/QuartzTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/QuartzTaskLog.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/Rescource.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/Role.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/Site.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/UploadInfo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/VO/ShowMenu.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/VO/TableField.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/VO/TableVO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/VO/TreeMenu.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/entity/VO/ZtreeVO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/exception/BizException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/exception/GlobalExceptionHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/ArticleClickTempletModel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/ArticleDirective.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/BaseDirective.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/ChannelDirective.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/CommentNumberTempletModel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/IndexArticleDirective.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/LookLikeArticlesTempletModel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/NewCommentArticleTempletModel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/ParentChannelListDirective.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/SysUserTempletModel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/SystemDirective.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/freemark/TagsTempletModel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/lucene/LuceneSearch.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/oss/QiniuConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/oss/UploadService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/realm/AuthRealm$ShiroUser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/realm/AuthRealm.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/redis/CacheUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/redis/RedisCacheManager.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/redis/RedisObjectSerializer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/redis/RedisSessionDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/redis/ShiroCache.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/BaseTenantService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/BlogArticleService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/BlogChannelService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/BlogCommentService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/BlogTagsService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/DictService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/GroupService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/IFileInfoService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/LogService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/MenuService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/QuartzTaskLogService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/QuartzTaskService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/RescourceService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/RoleService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/SiteService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/TableService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/UploadInfoService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/UploadService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/UserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/BaseTenantServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/BlogArticleServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/BlogChannelServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/BlogCommentServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/BlogTagsServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/DictServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/FileInfoServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/GroupServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/LocalUploadServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/LogServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/MenuServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/OssUploadServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/QiniuUploadServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/QuartzTaskLogServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/QuartzTaskServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/RescourceServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/RoleServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/SiteServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/TableServiceImpl$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/TableServiceImpl$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/TableServiceImpl$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/TableServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/UploadInfoServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/service/impl/UserServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/Constants.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/CreateTableFiles$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/CreateTableFiles$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/CreateTableFiles$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/CreateTableFiles$4.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/CreateTableFiles$5.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/CreateTableFiles.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/DigestUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/Digests.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/Encodes.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/Exceptions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/GenEntityMySql$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/GenEntityMySql.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/LayerData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/MyCompare.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/QETag.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/QiniuFileUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/RestResponse.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/SessionUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/SpringContextHolder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/SpringUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/ToolUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/Underline2Camel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/VerifyCodeUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/ZipUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/quartz/ScheduleJob.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/quartz/ScheduleRunnable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/quartz/ScheduleUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mysiteforme/admin/util/quartz/task/SystemTask.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log/logback.xml" afterPath="$PROJECT_DIR$/target/classes/log/logback.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogArticleMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogArticleMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogChannelMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogChannelMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogCommentMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogCommentMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogTagsMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogTagsMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/LogMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LogMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/MenuMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/MenuMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/RoleMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/RoleMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TableDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TableDao.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/ner-auto.sql" afterPath="$PROJECT_DIR$/target/classes/sql/ner-auto.sql" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/86706b5e-5d3c-4104-90fc-3df885325d4d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/about/author.ftl" afterPath="$PROJECT_DIR$/target/classes/templates/blog/about/author.ftl" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/vm/controller.java.vm" afterPath="$PROJECT_DIR$/target/classes/templates/vm/controller.java.vm" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mysiteforme/admin/AppApplicationTests.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mysiteforme/admin/TestZipUtil.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,103 +395,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/FileController.java">
+      <file leaf-file-name="QuartzTaskServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/service/impl/QuartzTaskServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/SiteController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2786">
-              <caret line="141" column="55" lean-forward="true" selection-start-line="141" selection-start-column="55" selection-end-line="141" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyHandlerInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MyHandlerInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2619">
-              <caret line="97" column="17" lean-forward="false" selection-start-line="94" selection-start-column="8" selection-end-line="97" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/system/rescource/list.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RescourceController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/RescourceController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileInfoServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/FileInfoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RescourceServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/RescourceServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IFileInfoService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/IFileInfoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="-1593">
+              <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1723#1724#0" expanded="true" />
+                <element signature="e#1774#1775#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/oss/UploadService.java">
+      <file leaf-file-name="QuartzConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/config/QuartzConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+            <state relative-caret-position="-1431">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemTask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/util/quartz/task/SystemTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+              <folding>
+                <element signature="e#1899#1900#0" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entity.java.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/vm/entity.java.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-162">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp.vm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/vm/list.jsp.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-162">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,22 +455,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mysiteforme</find>
-      <find>system:logs</find>
-      <find>system:</find>
-      <find>跳转</find>
-      <find>不能有</find>
-      <find>console.log</find>
-      <find>租户表</find>
-      <find>wangl</find>
-      <find>ok()</find>
       <find>sys_user</find>
       <find>是否记住登录</find>
       <find>/login</find>
       <find>protected</find>
       <find>logger</find>
       <find>LOGGER</find>
-      <find>systemTask</find>
       <find>zone0</find>
       <find>public</find>
       <find>@Cacheable</find>
@@ -154,14 +475,30 @@
       <find>result</find>
       <find>http://</find>
       <find>&quot;http://&quot;</find>
+      <find>com.mysiteforme.</find>
+      <find>mysite</find>
+      <find>QuartzTask</find>
+      <find>MySiteForMeScheduler</find>
+      <find>synchronizationArticleView</find>
+      <find>获取定时任务CronTrigger出现异常</find>
+      <find>qua</find>
+      <find>mysiteforme</find>
+      <find>com.mysiteforme</find>
+      <find>systemTask</find>
     </findStrings>
     <replaceStrings>
-      <replace>com.ner</replace>
       <replace>jll</replace>
       <replace>租户</replace>
       <replace>log</replace>
       <replace>HTTP</replace>
+      <replace>com.ner.</replace>
+      <replace>com.ner</replace>
+      <replace>com.ner`</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>G:\work\ner-auto</dir>
+      <dir>G:\work\ner-auto\src\main\java\com\ner\admin\util</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,16 +516,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BaseTenantService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/RestResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/BaseTenantServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/QuartzTaskController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/web/BlogPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/DictController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/LogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/MenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/RescourceController.java" />
@@ -230,6 +557,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MyHandlerInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/SiteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/oss/UploadService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ner/admin/annotation/SysLog.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/TableDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/blog/about/author.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/blogChannel/list.ftl" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ner/admin/util/quartz/ScheduleUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/system/menu/test.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/ner-auto.sql" />
       </list>
     </option>
   </component>
@@ -270,6 +607,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -311,7 +650,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ner-auto" type="b2602c69:ProjectViewProjectNode" />
@@ -339,26 +678,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="oss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ner-auto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ner-auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ner-auto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ner-auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ner-auto" type="b2602c69:ProjectViewProjectNode" />
@@ -366,14 +686,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ner-auto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ner-auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ner-auto" type="b2602c69:ProjectViewProjectNode" />
@@ -390,35 +702,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ner-auto" type="b2602c69:ProjectViewProjectNode" />
               <item name="ner-auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ner-auto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ner-auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="rescource" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,7 +726,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://G:/work/ner-auto/src/main/java/com/mysiteforme/admin/service/impl/UserServiceImpl.java&#10;main&#9;FILE&#9;file://G:/work/ner-auto/src/main/resources/templates/main.ftl&#10;QuartzTask&#9;PSI&#9;JAVA://com.ner.admin.base.BaseController#quartzTaskLogService&#10;500&#9;FILE&#9;file://G:/work/ner-auto/src/main/resources/templates/admin/error/500.ftl&#10;TableDao&#9;PSI&#9;JAVA://com.mysiteforme.admin.dao.TableDao" />
+    <property name="SearchEverywhereHistoryKey" value="QuartzTask&#9;PSI&#9;JAVA://com.ner.admin.entity.QuartzTask&#10;com.ner.admin.util.quartz.ScheduleJob&#9;PSI&#9;JAVA://com.ner.admin.util.quartz.ScheduleJob&#10;main&#9;FILE&#9;file://G:/work/ner-auto/src/main/resources/templates/main.ftl&#10;500&#9;FILE&#9;file://G:/work/ner-auto/src/main/resources/templates/admin/error/500.ftl&#10;TableDao&#9;PSI&#9;JAVA://com.mysiteforme.admin.dao.TableDao" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../apsd/api-admin" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
@@ -441,11 +735,11 @@
       <recent name="com.mysiteforme.admin.oss" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\work\ner-auto\src\main\resources\static\js" />
+      <recent name="G:\work\ner-auto\src\main\resources\static\css" />
+      <recent name="G:\work\ner-auto\src\main\resources\static\img" />
       <recent name="G:\work\ner-auto\src\main\resources\templates\admin" />
       <recent name="G:\work\ner-auto\src\main\java\com\mysiteforme\admin\service\impl" />
-      <recent name="G:\work\ner-auto\src\main\java\com\mysiteforme\admin\service" />
-      <recent name="G:\work\ner-auto\src\main\java\com\mysiteforme\admin\entity" />
-      <recent name="G:\work\ner-auto\src\main\java\com\mysiteforme\admin\dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -510,7 +804,7 @@
     </configuration>
     <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mysiteforme.admin.AppApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ner.admin.AppApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <module name="ner-auto" />
       <envs />
@@ -569,12 +863,14 @@
       <workItem from="1563020915493" duration="173000" />
       <workItem from="1563198166690" duration="5472000" />
       <workItem from="1563204213580" duration="531000" />
-      <workItem from="1563206007760" duration="859000" />
+      <workItem from="1563206007760" duration="965000" />
+      <workItem from="1563283003687" duration="4458000" />
+      <workItem from="1563287804277" duration="3328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26624000" />
+    <option name="totallyTimeSpent" value="34516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -587,26 +883,26 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34138486" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27231467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2806354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39613527" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3542673" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,23 +926,123 @@
           <properties />
           <option name="timeStamp" value="62" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0.jar!/org/quartz/impl/RemoteScheduler.class</url>
+          <line>429</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ner/admin/util/quartz/task/SystemTask.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="63" />
+      <option name="time" value="85" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/RescourceController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/LoginController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/BlogHandlerInterceptor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MyHandlerInterceptor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MySysUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/annotation/SysLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="187">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/config/SysMetaObjectHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/dao/TableDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/service/impl/TableServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+          <folding>
+            <element signature="e#1416#1417#0" expanded="false" />
+            <element signature="e#1468#1469#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/controller/system/TableController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="356" column="9" lean-forward="false" selection-start-line="356" selection-start-column="9" selection-end-line="356" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TableDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <marker date="1563285120042" expanded="true" signature="295:387" ph="select count... tables" />
+            <marker date="1563285120042" expanded="true" signature="521:650" ph="select count... tables" />
+            <marker date="1563285120042" expanded="true" signature="769:940" ph="select count... columns" />
+            <marker date="1563285120042" expanded="true" signature="1057:1306" ph="select TABLE... TABLES" />
+            <marker date="1563285120042" expanded="true" signature="1422:1827" ph="select TABLE... TABLES" />
+            <marker date="1563285120042" expanded="true" signature="2666:3929" ph="select c.COL... Columns" />
+            <marker date="1563285120042" expanded="true" signature="3179:3244" ph="select * fro... sys_dict" />
+            <marker date="1563285120042" expanded="true" signature="4683:5582" ph="select t.TAB... TABLES" />
+            <marker date="1563285120042" expanded="true" signature="5364:5429" ph="select * fro... sys_dict" />
+            <marker date="1563285120042" expanded="true" signature="5689:7329" ph="CREATE TABLE... ${name}" />
+            <marker date="1563285120042" expanded="true" signature="7429:7598" ph="alter table ${tableName}... " />
+            <marker date="1563285120042" expanded="true" signature="7717:7888" ph="alter table ${tableName}... " />
+            <marker date="1563285120042" expanded="true" signature="8008:8190" ph="alter table ${tableName}... " />
+            <marker date="1563285120042" expanded="true" signature="8298:8342" ph="ALTER table ${tableName}" />
+            <marker date="1563285120042" expanded="true" signature="8442:8465" ph="drop table $... " />
+            <marker date="1563285120042" expanded="true" signature="8571:8608" ph="alter table ${oldname}... " />
+            <marker date="1563285120042" expanded="true" signature="8700:8745" ph="alter table ${tableName}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/blog/about/author.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="101" column="89" lean-forward="false" selection-start-line="101" selection-start-column="89" selection-end-line="101" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/layui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -654,371 +1050,312 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/quartz/task/SystemTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/layui/layui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="27">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="6075" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/UserConteroller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BlogArticleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="61" column="34" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1563284685867" expanded="true" signature="6709:6770" ph="delete from blog_article_tags... " />
+            <marker date="1563284685867" expanded="true" signature="6916:7354" ph="select , c.c... " />
+            <marker date="1563284685867" expanded="true" signature="7464:7968" ph="SELECT * fro... blog_article" />
+            <marker date="1563284685867" expanded="true" signature="7513:7655" ph="select * fro... blog_article_tags" />
+            <marker date="1563284685867" expanded="true" signature="7564:7633" ph="select tags_... blog_article_tags" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/blogChannel/list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/service/QuartzTaskLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/UserService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="98">
+          <caret line="170" column="0" lean-forward="false" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/TableService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-451">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="134">
+          <caret line="361" column="0" lean-forward="false" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/SiteService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0.jar!/org/quartz/CronTrigger.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="137">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/RoleService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.3.12.RELEASE/spring-context-support-4.3.12.RELEASE.jar!/org/springframework/scheduling/quartz/QuartzJobBean.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="118">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/QuartzTaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-863">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/QuartzTaskLogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/MenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/LogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/GroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/DictService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BlogTagsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-701">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BlogCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BlogChannelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-890">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BlogArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/BaseTenantService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/QiniuFileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="25" column="84" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/OssUploadServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/UploadService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1186">
-          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE.jar!/org/springframework/cache/annotation/Cacheable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/UploadInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/system/site/show.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/entity/Rescource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/DataEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus/2.1.4/mybatis-plus-2.1.4.jar!/com/baomidou/mybatisplus/activerecord/Model.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/entity/QuartzTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/BaseEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/util/quartz/ScheduleJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+        <state relative-caret-position="-216">
+          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/UploadInfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="-216">
+          <caret line="43" column="65" lean-forward="false" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
+        <state relative-caret-position="1188">
           <caret line="44" column="40" lean-forward="false" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/oss/QiniuConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="999">
-          <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding>
-            <element signature="e#1197#1198#0" expanded="true" />
-            <element signature="e#1253#1254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/UploadInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/QETag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="75" column="18" lean-forward="false" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/org/apache/commons/codec/digest/DigestUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="102" column="25" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/QiniuUploadServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="74" selection-end-column="57" />
-          <folding>
-            <element signature="e#1529#1530#0" expanded="false" />
-            <element signature="e#1582#1583#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/util/RestResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="271">
+          <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/RescourceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="21" column="58" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/RescourceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="144" column="26" lean-forward="false" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2619">
-          <caret line="97" column="17" lean-forward="false" selection-start-line="94" selection-start-column="8" selection-end-line="97" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/RescourceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/BlogHandlerInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/system/rescource/list.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/base/MyHandlerInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/SiteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2786">
-          <caret line="141" column="55" lean-forward="true" selection-start-line="141" selection-start-column="55" selection-end-line="141" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/controller/system/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/IFileInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/service/impl/FileInfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/AppApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mysiteforme/admin/oss/UploadService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/controller/QuartzTaskController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/service/QuartzTaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0.jar!/org/quartz/TriggerKey.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0.jar!/org/quartz/impl/StdScheduler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="212" column="19" lean-forward="false" selection-start-line="212" selection-start-column="19" selection-end-line="212" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0.jar!/org/quartz/impl/RemoteMBeanScheduler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="331" column="19" lean-forward="false" selection-start-line="331" selection-start-column="19" selection-end-line="331" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0.jar!/org/quartz/Scheduler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="114" column="12" lean-forward="false" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0.jar!/org/quartz/impl/RemoteScheduler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="427" column="19" lean-forward="false" selection-start-line="427" selection-start-column="19" selection-end-line="427" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE.jar!/org/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/qrzt.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="190" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/util/quartz/ScheduleUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/controller/system/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1706">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/controller/system/UserConteroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/system/menu/list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4535">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/system/menu/test.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2619">
+          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding>
+            <marker date="1563290395490" expanded="true" signature="1832:1848" ph="..." />
+            <marker date="1563290395490" expanded="true" signature="2927:2935" ph="&amp;##xe654;" />
+            <marker date="1563290395490" expanded="true" signature="3095:3103" ph="&amp;##xe642;" />
+            <marker date="1563290395490" expanded="true" signature="3256:3264" ph="&amp;##xe640;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="12" column="63" lean-forward="false" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/ner-auto.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32994">
+          <caret line="1303" column="31" lean-forward="false" selection-start-line="1303" selection-start-column="31" selection-end-line="1303" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/service/impl/QuartzTaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1593">
+          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+          <folding>
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/config/QuartzConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1431">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ner/admin/util/quartz/task/SystemTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+          <folding>
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/vm/entity.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/vm/list.jsp.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,8 +1,8 @@
-package com.mysiteforme.admin;
+package com.ner.admin;
 
 import com.alibaba.fastjson.JSONObject;
-import com.mysiteforme.admin.dao.MenuDao;
-import com.mysiteforme.admin.entity.Menu;
+import com.ner.admin.dao.MenuDao;
+import com.ner.admin.entity.Menu;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

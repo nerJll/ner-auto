@@ -51,15 +51,15 @@ spring:
   #缓存配置
   cache:
       type: redis
-      cache-names: mysiteforme
+      cache-names: ner
 #mybatisPlus
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.mysiteforme.admin.entity
+  type-aliases-package: com.ner.admin.entity
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
   #实体扫描，多个package用逗号或者分号隔离
-  typeAliasesPackage: com.mysiteforme.admin.entity
+  typeAliasesPackage: com.ner.admin.entity
 
   global-config:
     #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
@@ -78,7 +78,7 @@ mybatis-plus:
     #    logic-delete-value: 1
     #    logic-not-delete-value: 0
     #自定义填充策略接口实现
-    metaObjectHandler: com.mysiteforme.admin.config.SysMetaObjectHandler
+    metaObjectHandler: com.ner.admin.config.SysMetaObjectHandler
     #自定义SQL注入器
     #sql-injector: com.baomidou.springboot.xxx
   configuration:

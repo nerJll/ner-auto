@@ -25,7 +25,7 @@ spring:
 #日志
 logging:
   config: classpath:log/logback.xml
-  path: G:\ner-auto\log\mysiteforme
+  path: G:\ner-auto\log\ner
 
 #自定义配置属性
 #源码生成文件夹
