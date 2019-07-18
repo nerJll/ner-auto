@@ -92,7 +92,6 @@ public class OssUploadServiceImpl implements UploadService {
             returnUrl.append(realName);
             PutObjectResult putResult = getOSSClient().putObject(getUploadInfo().getOssBucketName(), key.toString(), is, metadata);
             //解析结果
-            System.out.println("md5码为"+putResult.getETag());
             rescource = new Rescource();
             rescource.setFileName(realName.toString());
             rescource.setFileSize(new java.text.DecimalFormat("#.##").format(file.getSize()/1024)+"kb");

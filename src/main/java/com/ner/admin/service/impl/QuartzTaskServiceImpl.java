@@ -111,7 +111,6 @@ public class QuartzTaskServiceImpl extends ServiceImpl<QuartzTaskDao, QuartzTask
         for(Long jobId : jobIds){
             ScheduleUtils.resumeJob(scheduler, jobId);
         }
-
         updateBatchTasksByStatus(jobIds, Constants.QUARTZ_STATUS_NOMAL);
     }
 }

@@ -34,8 +34,6 @@ public class ScheduleUtils {
      */
     public static CronTrigger getCronTrigger(Scheduler scheduler, Long jobId) {
         try {
-            System.out.println(jobId);
-            TriggerKey k = getTriggerKey(jobId);
             return (CronTrigger) scheduler.getTrigger(getTriggerKey(jobId));
         } catch (SchedulerException e) {
             throw new BizException("获取定时任务CronTrigger出现异常", e);

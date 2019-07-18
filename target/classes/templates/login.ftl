@@ -56,7 +56,7 @@
             var srcBgArray = ["${base}/static/img/login-back-1.jpg",
                 "${base}/static/img/login-back-2.jpg"];
             $('#bg-body').bcatBGSwitcher({
-                timeout:5000,
+                timeout:10000,
                 urls: srcBgArray,
                 alt: 'Full screen background image'
             });
